@@ -1,14 +1,16 @@
 ## Stanford Cars Classification Challenge
 
 ![Cars Visualization](./images/cars_viz.gif)
+
  This repo contains some of my experiments using the Stanford Cars dataset. The Cars dataset contains 16,185 images of 196 classes of cars. The data is split into 8,144 training images and 8,041 testing images, where each class has been split roughly in a 50-50 split. 
 
 # Aim
 The aim is to train a model that is best able to classify cars using the training set images.
 This is a hard problem because some we have a large number of classes (196) and many classes have very few example images.
+
 ![Car Count distribution](./images/class_count_dist.png)
-In the above figure you can see that some classes have as few as 20 images.
-In particular Class 135 has the lowest image count (20) while  class 118 has highest no. of images (55). Most classes have around 33 image.
+
+In the above figure you can see that some classes have as few as 20 images. In particular Class 135 has the lowest image count (20) while  class 118 has highest no. of images (55). Most classes have around 33 image.
 Below are some of the tough images. The trained model found it very hard to classify these images. The highlighted regions are Grad-CAM heatmaps.
 
 ![Tough examples](./images/cnn_imp_regions.png)
