@@ -22,7 +22,7 @@ Below are some of the tough images. The trained model found it very hard to clas
 
 1. Models
 
-I experimented with EfficientNet EB0,EB3, ResNext 50 and SeResNext. I found  ResNext 50 to work best (around 92.6 % test accuracy). SeResnext is slightly lacking. It gets accuracy of around 92.1% on the test set. I used fastai v1 for training. I found pretrained EB0's performance to be lacking compared to ResNext and SeResNext (around 91% test accuracy).
+I experimented with EfficientNet EB0,EB3, ResNext 50 and SeResNext. I found  SeResnext to work best (around 92.6 % test accuracy). ResNext 50  is slightly lacking. It gets accuracy of around 92.1% on the test set. I used fastai v1 for training. I found pretrained EB0's performance to be lacking compared to ResNext and SeResNext (around 91% test accuracy).
 I also experimented with pretrained Xception and InceptionResNetV2 models available in Keras. I found their rate of convergance to be pretty slow so i didn't do exhaustive experiments.
 
 I found fastai to be very useful for performing quick experiments. I trained ResNext50 model trained in 3 stages using the recommended progressive resizing approach:  128x128 -> 256*256 -> 299x299.
